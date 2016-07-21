@@ -211,8 +211,8 @@ elif test==23:
 #            comp.triggers = triggers_mumu
 #        comp.splitFactor = 1
 #        comp.files = comp.files[:1]
-        comp.splitFactor = 1000
-        comp.files = comp.files[:]
+        comp.splitFactor = 1
+        comp.files = comp.files[:1]
 
 elif test==25:
     isDiJet=True
@@ -432,7 +432,7 @@ args = ['python',
 
 subprocess.call(args)
 from PhysicsTools.Heppy.utils.cmsswPreprocessor import CmsswPreprocessor
-preprocessor = CmsswPreprocessor(preprocessorFile)
+preprocessor = CmsswPreprocessor('dump_mc.py')
 
 ###autoAAA(selectedComponents)
 
@@ -440,7 +440,7 @@ preprocessor = CmsswPreprocessor(preprocessorFile)
 config = cfg.Config( components = selectedComponents,
                      sequence = metSequence,
                      services = [output_service],
-#                     preprocessor=preprocessor, # comment if pre-processor non needed
+                     preprocessor=preprocessor, # comment if pre-processor non needed
 #                     events_class = event_class)
                      events_class = Events)
 

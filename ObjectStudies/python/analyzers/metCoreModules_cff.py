@@ -405,7 +405,7 @@ jetAnaScaleDown = jetAna.clone(name='jetAnalyzerScaleDown',
 
 jetPuppiAna = cfg.Analyzer(
     JetAnalyzer, name='jetAnalyzerPuppi',
-    jetCol = 'slimmedJetsPuppi',
+    jetCol = ("selectedPatJetsPuppi", "","RERUN"),
     copyJetsByValue = False,      #Whether or not to copy the input jets or to work with references (should be 'True' if JetAnalyzer is run more than once)
     genJetCol = 'slimmedGenJets',
     rho = ('fixedGridRhoFastjetAll','',''),
@@ -444,7 +444,7 @@ jetPuppiAna = cfg.Analyzer(
 ## Jets Analyzer (generic)
 jetPuppiAnaScaleUp = jetPuppiAna.clone(name='jetAnalyzerPuppiScaleUp',
     copyJetsByValue = True,
-    jetCol = 'slimmedJetsPuppi',
+    jetCol = ("selectedPatJetsPuppi", "","RERUN"),
     shiftJEC = +1, # set to +1 or -1 to apply +/-1 sigma shift to the nominal jet energies
     collectionPostFix = "Puppi_jecUp",
     calculateType1METCorrection  = True,
@@ -454,7 +454,7 @@ jetPuppiAnaScaleUp = jetPuppiAna.clone(name='jetAnalyzerPuppiScaleUp',
 ## Jets Analyzer (generic)
 jetPuppiAnaScaleDown = jetPuppiAna.clone(name='jetAnalyzerPuppiScaleDown',
     copyJetsByValue = True,
-    jetCol = 'slimmedJetsPuppi',
+    jetCol = ("selectedPatJetsPuppi", "","RERUN"),
     shiftJEC = -1, # set to +1 or -1 to apply +/-1 sigma shift to the nominal jet energies
     collectionPostFix = "Puppi_jecDown",
     calculateType1METCorrection  = True,
