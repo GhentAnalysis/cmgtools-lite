@@ -286,8 +286,8 @@ metAnaScaleDown = metAna.clone(name="metAnalyzerScaleDown",
 
 metPuppiAna = cfg.Analyzer(
     METAnalyzer, name="metAnalyzerPuppi",
-    metCollection     = "slimmedMETsPuppi",
-    noPUMetCollection = "slimmedMETsPuppi",    
+    metCollection     = ("slimmedMETsPuppi","","RERUN"),
+    noPUMetCollection = ("slimmedMETsPuppi","","RERUN"),    
     copyMETsByValue = False,
     doTkMet = False,
     includeTkMetCHS = False,
