@@ -101,25 +101,25 @@
 #python launch.py --inputDBS phys03 --remoteDir="80X_1l_v14" --unitsPerJob=3 --production_label="80X_1l_v14" ewkDM_TTZToLL_01j_LO_DC2A0p2_DC2V0p2
 
 ## high stat signal 0j
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC2A_0p200000_DC2V_0p200000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC1A_0p500000_DC1V_m1p000000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC1A_0p500000_DC1V_0p500000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC1A_1p000000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2V_0p250000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_0p176700_DC2V_0p176700
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_0p176700_DC2V_m0p176700
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_0p250000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_m0p176700_DC2V_0p176700
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_m0p176700_DC2V_m0p176700
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_m0p250000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2V_m0p250000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_cuW_0p100000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_cuW_0p200000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_cuW_0p300000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_cuW_m0p100000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_cuW_m0p200000
-#python launch.py --inputDBS phys03 --remoteDir="80X_1l_v12" --unitsPerJob=3 --production_label="80X_1l_v12" ttZ0j_ll_cuW_m0p300000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC2A_0p200000_DC2V_0p200000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC1A_0p500000_DC1V_m1p000000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC1A_0p500000_DC1V_0p500000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC1A_1p000000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2V_0p250000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_0p176700_DC2V_0p176700
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_0p176700_DC2V_m0p176700
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_0p250000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_m0p176700_DC2V_0p176700
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_m0p176700_DC2V_m0p176700
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2A_m0p250000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_DC1A_0p600000_DC1V_m0p240000_DC2V_m0p250000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_cuW_0p100000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_cuW_0p200000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_cuW_0p300000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_cuW_m0p100000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_cuW_m0p200000
+python launch.py --inputDBS phys03 --remoteDir="80X_0l_v12" --unitsPerJob=3 --production_label="80X_0l_v12" ttZ0j_ll_cuW_m0p300000
 
 ## 2016 Data
 #python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" SingleMuon_Run2016B_03Feb2017_v2
@@ -159,19 +159,19 @@
 #python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" DoubleEG_Run2016H_03Feb2017_v3
 #
 #python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016B_03Feb2017_v2
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016C_03Feb2017
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016D_03Feb2017
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016E_03Feb2017
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016F_03Feb2017
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016G_03Feb2017
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016H_03Feb2017_v2
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016H_03Feb2017_v3
-
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016B_03Feb2017_v2
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016C_03Feb2017
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016D_03Feb2017
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016E_03Feb2017
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016F_03Feb2017
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016G_03Feb2017
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016H_03Feb2017_v2
-python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016H_03Feb2017_v3
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016C_03Feb2017
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016D_03Feb2017
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016E_03Feb2017
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016F_03Feb2017
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016G_03Feb2017
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016H_03Feb2017_v2
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016H_03Feb2017_v3
+#
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016B_03Feb2017_v2
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016C_03Feb2017
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016D_03Feb2017
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016E_03Feb2017
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016F_03Feb2017
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016G_03Feb2017
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016H_03Feb2017_v2
+#python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MET_Run2016H_03Feb2017_v3
