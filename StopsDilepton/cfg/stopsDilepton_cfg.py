@@ -370,7 +370,7 @@ if getHeppyOption("loadSamples"):
     #from CMGTools.StopsDilepton.samples_13TeV_Moriond2017 import *
     from CMGTools.RootTools.samples.samples_13TeV_signals import *
     from CMGTools.StopsDilepton.TTbarDMJets_signals_RunIISummer16MiniAODv2 import *
-    from CMGTools.StopsDilepton.ttZ0j_5f_MLM_signals_RunIISummer16MiniAODv2 import *
+    from CMGTools.StopsDilepton.ttX0j_5f_MLM_signals_RunIISummer16MiniAODv2 import *
     from CMGTools.StopsDilepton.ewkDM_signals_RunIISummer16MiniAODv2 import *
     from CMGTools.StopsDilepton.samples import *
     for sample in dataSamples + samples_data_private:
