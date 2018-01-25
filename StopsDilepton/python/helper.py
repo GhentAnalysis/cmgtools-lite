@@ -66,7 +66,7 @@ def getFilesOnDPM(dataset,pattern=".*root"):
     except IOError:
         files = [ 'root://hephyse.oeaw.ac.at//%s'%x for x in  getFilesFromDAS(dataset, instance='phys03', limit=0) if re.match(pattern,x) ] 
         if len(files) == 0:
-            raise RuntimeError, "ERROR making dataset: no files found under %s matching '%s'" % (dataset,path,pattern)
+            raise RuntimeError, "ERROR making dataset: no files found under %s matching '%s'" % (dataset,pattern)
         writeDatasetToCache(cache_name, files)
     return files
 
