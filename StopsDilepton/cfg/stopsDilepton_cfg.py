@@ -260,8 +260,12 @@ triggerFlagsAna.triggerBits = {
         'Jet80MET90'       :triggers_Jet80MET90      ,
         'Jet80MET120'      :triggers_Jet80MET120     ,
         'MET120Mu5'        :triggers_MET120Mu5       ,
+
         'DoubleMu3_PFMET50_v' : ['HLT_DoubleMu3_PFMET50_v*'],
         'Mu6_PFHT200_PFMET100_v' : ['Mu6_PFHT200_PFMET100_v*'],
+        'PFMET110_PFMHT110_IDTight': ['HLT_PFMET110_PFMHT110_IDTight_v*'], #prescaled
+        'PFMET120_PFMHT120_IDTight': ['HLT_PFMET120_PFMHT120_IDTight_v*'],
+
 # individual triggers
         'Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ': ['HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v*'],
         'Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ': ['HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v*'],
@@ -379,8 +383,9 @@ if getHeppyOption("loadSamples"):
         #sample.json="$CMSSW_BASE/src/CMGTools/TTHAnalysis/data/json/Cert_271036-282092_13TeV_PromptReco_Collisions16_JSON.txt"
         sample.json="$CMSSW_BASE/src/CMGTools/TTHAnalysis/data/json/Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.txt"
     
+    selectedComponents = [DYJetsToLL_M50_LO_ext]
     #selectedComponents = [SingleElectron_Run2016H_03Feb2017_v3]
-    selectedComponents = [ttZ0j_ll]
+    #selectedComponents = [ttZ0j_ll]
     #selectedComponents = [WpWpJJ]
     #selectedComponents = [TTbarDMJets_DiLept_pseudoscalar_Mchi_50_Mphi_10]
     #selectedComponents = [SMS_T8bbllnunu_XCha0p5_XSlep0p5_mN1_700_1000]
