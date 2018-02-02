@@ -125,6 +125,87 @@ ttZ0j_ll_cuW_0p100000.xSection                                                  
 ttZ0j_ll_cuW_0p200000.xSection                                                      = kFac*1.714
 ttZ0j_ll_cuW_0p300000.xSection                                                      = kFac*3.767
 
+
+ttGamma0j_ll = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll',
+    dataset = '/ewkDMGZ_ttgamma_ll/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DAG_0p176700_DVG_0p176700 = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DAG_0p176700_DVG_0p176700',
+    dataset = '/ewkDMGZ_ttgamma_ll_DAG_0p176700_DVG_0p176700/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DAG_0p176700_DVG_m0p176700 =  makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DAG_0p176700_DVG_m0p176700',
+    dataset = '/ewkDMGZ_ttgamma_ll_DAG_0p176700_DVG_m0p176700/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DAG_m0p176700_DVG_0p176700 = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DAG_m0p176700_DVG_0p176700',
+    dataset = '/ewkDMGZ_ttgamma_ll_DAG_m0p176700_DVG_0p176700/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DAG_m0p176700_DVG_m0p176700 = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DAG_m0p176700_DVG_m0p176700',
+    dataset = '/ewkDMGZ_ttgamma_ll_DAG_m0p176700_DVG_m0p176700/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DAG_0p250000 = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DAG_0p250000',
+    dataset = '/ewkDMGZ_ttgamma_ll_DAG_0p250000/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DAG_0p500000 = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DAG_0p500000',
+    dataset = '/ewkDMGZ_ttgamma_ll_DAG_0p500000/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DAG_m0p250000 = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DAG_m0p250000',
+    dataset = '/ewkDMGZ_ttgamma_ll_DAG_m0p250000/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DAG_m0p500000 = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DAG_m0p500000',
+    dataset = '/ewkDMGZ_ttgamma_ll_DAG_m0p500000/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DVG_0p250000 = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DVG_0p250000',
+    dataset = '/ewkDMGZ_ttgamma_ll_DVG_0p250000/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DVG_0p500000 = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DVG_0p500000',
+    dataset = '/ewkDMGZ_ttgamma_ll_DVG_0p500000/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DVG_m0p250000 = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DVG_m0p250000',
+    dataset = '/ewkDMGZ_ttgamma_ll_DVG_m0p250000/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+ttGamma0j_ll_DVG_m0p500000 = makeMyPrivateMCComponentFromDPM(
+    name    = 'ttGamma0j_ll_DVG_m0p500000',
+    dataset = '/ewkDMGZ_ttgamma_ll_DVG_m0p500000/schoef-15Jan17_mAOD-0b8c51c13c712fe6e73a79b549018f23/USER',
+    xSec = 1,
+)
+
+ttGamma0j_ll.xSection                              = kFac*0.2933
+ttGamma0j_ll_DAG_0p176700_DVG_0p176700.xSection    = kFac*0.002952
+ttGamma0j_ll_DAG_0p176700_DVG_m0p176700.xSection   = kFac*0.2988
+ttGamma0j_ll_DAG_0p250000.xSection                 = kFac*0.3049
+ttGamma0j_ll_DAG_0p500000.xSection                 = kFac*0.3403
+ttGamma0j_ll_DAG_m0p176700_DVG_0p176700.xSection   = kFac*0.3113
+ttGamma0j_ll_DAG_m0p176700_DVG_m0p176700.xSection  = kFac*0.2985
+ttGamma0j_ll_DAG_m0p250000.xSection                = kFac*0.305
+ttGamma0j_ll_DAG_m0p500000.xSection                = kFac*0.3401
+ttGamma0j_ll_DVG_0p250000.xSection                 = kFac*0.3144
+ttGamma0j_ll_DVG_0p500000.xSection                 = kFac*0.3595
+ttGamma0j_ll_DVG_m0p250000.xSection                = kFac*0.2958
+ttGamma0j_ll_DVG_m0p500000.xSection                = kFac*0.3231
+
 signalSamples = [\
     ttZ0j_ll,
     ttZ0j_ll_DC2A_0p200000_DC2V_0p200000,
@@ -145,4 +226,17 @@ signalSamples = [\
     ttZ0j_ll_cuW_m0p100000,
     ttZ0j_ll_cuW_m0p200000,
     ttZ0j_ll_cuW_m0p300000,
+    ttGamma0j_ll,
+    ttGamma0j_ll_DAG_0p176700_DVG_0p176700,
+    ttGamma0j_ll_DAG_0p176700_DVG_m0p176700,
+    ttGamma0j_ll_DAG_0p250000,
+    ttGamma0j_ll_DAG_0p500000,
+    ttGamma0j_ll_DAG_m0p176700_DVG_0p176700,
+    ttGamma0j_ll_DAG_m0p176700_DVG_m0p176700,
+    ttGamma0j_ll_DAG_m0p250000,
+    ttGamma0j_ll_DAG_m0p500000,
+    ttGamma0j_ll_DVG_0p250000,
+    ttGamma0j_ll_DVG_0p500000,
+    ttGamma0j_ll_DVG_m0p250000,
+    ttGamma0j_ll_DVG_m0p500000,
 ]

@@ -234,7 +234,7 @@
 #python launch.py --remoteDir="80X_2l_1" --unitsPerJob=5 --production_label="80X_2l_1" TTWToQQ
 #python launch.py --remoteDir="80X_2l_1" --unitsPerJob=5 --production_label="80X_2l_1" TTW_LO
 #python launch.py --remoteDir="80X_2l_1" --unitsPerJob=5 --production_label="80X_2l_1" TTZToQQ
-python launch.py --remoteDir="80X_1l_v1" --unitsPerJob=2 --production_label="80X_1l_v1" TTZToLLNuNu_ext
+#python launch.py --remoteDir="80X_1l_v1" --unitsPerJob=2 --production_label="80X_1l_v1" TTZToLLNuNu_ext
 #python launch.py --remoteDir="80X_2l_1" --unitsPerJob=5 --production_label="80X_2l_1" TTZToLLNuNu_m1to10
 #python launch.py --remoteDir="80X_2l_1" --unitsPerJob=5 --production_label="80X_2l_1" TTZ_LO
 #python launch.py --remoteDir="80X_2l_1" --unitsPerJob=5 --production_label="80X_2l_1" TTGJets
@@ -329,4 +329,16 @@ python launch.py --remoteDir="80X_1l_v1" --unitsPerJob=2 --production_label="80X
 #python launch.py --remoteDir="80X_2l_1" --unitsPerJob=5 --production_label="80X_2l_1" ewkDM_ttZ_ll_DC1A_0p600000_DC1V_m0p240000_DC2V_m0p250000
 #python launch.py --remoteDir="80X_2l_1" --unitsPerJob=5 --production_label="80X_2l_1"
 
-
+python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DAG_0p176700_DVG_0p176700
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DAG_0p176700_DVG_m0p176700
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DAG_0p250000
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DAG_0p500000
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DAG_m0p176700_DVG_0p176700
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DAG_m0p176700_DVG_m0p176700
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DAG_m0p250000
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DAG_m0p500000
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DVG_0p250000
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DVG_0p500000
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DVG_m0p250000
+#python launch.py --remoteDir="80X_0l_35" --inputDBS phys03 --unitsPerJob=5 --production_label="80X_0l_35" ttGamma0j_ll_DVG_m0p500000

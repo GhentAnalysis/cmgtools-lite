@@ -260,6 +260,8 @@ triggerFlagsAna.triggerBits = {
         'Jet80MET90'       :triggers_Jet80MET90      ,
         'Jet80MET120'      :triggers_Jet80MET120     ,
         'MET120Mu5'        :triggers_MET120Mu5       ,
+        'DoubleMu3_PFMET50_v' : ['HLT_DoubleMu3_PFMET50_v*'],
+        'Mu6_PFHT200_PFMET100_v' : ['Mu6_PFHT200_PFMET100_v*'],
 # individual triggers
         'Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ': ['HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v*'],
         'Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ': ['HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v*'],
