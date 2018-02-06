@@ -266,6 +266,15 @@ triggerFlagsAna.triggerBits = {
         'PFMET110_PFMHT110_IDTight': ['HLT_PFMET110_PFMHT110_IDTight_v*'], #prescaled
         'PFMET120_PFMHT120_IDTight': ['HLT_PFMET120_PFMHT120_IDTight_v*'],
 
+        "MET_had": [ "HLT_MET200_v*", "HLT_MET250_v*", "HLT_MET300_v*", "HLT_PFMET100_PFMHT100_IDTight_v*", "HLT_PFMET110_PFMHT110_IDTight_v*", "HLT_PFMET120_BTagCSV0p72_v*", "HLT_PFMET120_PFMHT120_IDTight_v*", "HLT_PFMET170_HBHECleaned_v*", "HLT_PFMET170_JetIdCleaned_v*", "HLT_PFMET170_NoiseCleaned_v*", "HLT_PFMET170_v*", "HLT_PFMET300_v*", "HLT_PFMET400_v*", "HLT_PFMET90_PFMHT90_IDTight_v*", "HLT_CaloMHTNoPU90_PFMET90_PFMHT90_IDTight_v*", "HLT_CaloMHTNoPU90_PFMET90_PFMHT90_IDTight_BTagCSV0p72_v*", "HLT_QuadPFJet_VBF_v*"],
+        "MET_IsoTrk":[ "HLT_MET60_IsoTrk35_Loose_v*", "HLT_MET75_IsoTrk50_v*", "HLT_MET90_IsoTrk50_v*"], 
+        "MET_PFMETNoMu": ["HLT_MonoCentralPFJet80_PFMETNoMu120_JetIdCleaned_PFMHTNoMu120_IDTight_v*", "HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight_v*", "HLT_MonoCentralPFJet80_PFMETNoMu90_JetIdCleaned_PFMHTNoMu90_IDTight_v*", "HLT_MonoCentralPFJet80_PFMETNoMu90_PFMHTNoMu90_IDTight_v*"],
+        "MET_PFMETNoMu_JetIdCleaned":[ "HLT_PFMETNoMu120_JetIdCleaned_PFMHTNoMu120_IDTight_v*", "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_v*", "HLT_PFMETNoMu90_JetIdCleaned_PFMHTNoMu90_IDTight_v*", "HLT_PFMETNoMu90_PFMHTNoMu90_IDTight_v*"],
+        "MET_MuXer": ["HLT_Mu14er_PFMET100_v*", "HLT_Mu3er_PFHT140_PFMET125_v*", "HLT_Mu6_PFHT200_PFMET100_v*", "HLT_Mu6_PFHT200_PFMET80_BTagCSV0p72_v*", "HLT_PFMET120_Mu5_v*"],
+
+        "HTMHT_had": [ "HLT_DiCentralPFJet55_PFMET110_v*", "HLT_PFHT200_DiPFJetAve90_PFAlphaT0p57_v*", "HLT_PFHT200_DiPFJetAve90_PFAlphaT0p63_v*", "HLT_PFHT200_PFAlphaT0p51_v*", "HLT_PFHT250_DiPFJetAve90_PFAlphaT0p55_v*", "HLT_PFHT250_DiPFJetAve90_PFAlphaT0p58_v*", "HLT_PFHT300_DiPFJetAve90_PFAlphaT0p53_v*", "HLT_PFHT300_DiPFJetAve90_PFAlphaT0p54_v*", "HLT_PFHT350_DiPFJetAve90_PFAlphaT0p52_v*", "HLT_PFHT350_DiPFJetAve90_PFAlphaT0p53_v*", "HLT_PFHT350_PFMET100_v*", "HLT_PFHT400_DiPFJetAve90_PFAlphaT0p51_v*", "HLT_PFHT400_DiPFJetAve90_PFAlphaT0p52_v*", "HLT_Rsq0p25_v*", "HLT_Rsq0p30_v*", "HLT_RsqMR240_Rsq0p09_MR200_4jet_v*", "HLT_RsqMR240_Rsq0p09_MR200_v*", "HLT_RsqMR270_Rsq0p09_MR200_4jet_v*", "HLT_RsqMR270_Rsq0p09_MR200_v*"],
+        "HTMHT_PFMETNoMu":[ "HLT_DiPFJet40_DEta3p5_MJJ600_PFMETNoMu140_v*", "HLT_DiPFJet40_DEta3p5_MJJ600_PFMETNoMu80_v*"],
+
 # individual triggers
         'Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ': ['HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v*'],
         'Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ': ['HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v*'],
@@ -383,7 +392,7 @@ if getHeppyOption("loadSamples"):
         #sample.json="$CMSSW_BASE/src/CMGTools/TTHAnalysis/data/json/Cert_271036-282092_13TeV_PromptReco_Collisions16_JSON.txt"
         sample.json="$CMSSW_BASE/src/CMGTools/TTHAnalysis/data/json/Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.txt"
     
-    selectedComponents = [DYJetsToLL_M50_LO_ext]
+    #selectedComponents = [DYJetsToLL_M50_LO_ext]
     #selectedComponents = [SingleElectron_Run2016H_03Feb2017_v3]
     #selectedComponents = [ttZ0j_ll]
     #selectedComponents = [WpWpJJ]
@@ -398,7 +407,7 @@ if getHeppyOption("loadSamples"):
     #selectedComponents = [SMS_T2tt_mStop_425_mLSP_325]
     #selectedComponents = [QCD_flat_80X_noPU]
     #selectedComponents = [DoubleMuon_Run2016E_03Feb2017]
-    #selectedComponents = [MET_Run2016B_03Feb2017_v2]
+    selectedComponents = [MET_Run2016B_03Feb2017_v2]
     #selectedComponents = [DoubleEG_Run2016E_23Sep2016]
     #selectedComponents = [DoubleMuon_Run2016E_23Sep2016]
     #selectedComponents = [QCD_Pt_15to3000_M2_0_500, QCD_Pt_15to3000_M2_5_100]
