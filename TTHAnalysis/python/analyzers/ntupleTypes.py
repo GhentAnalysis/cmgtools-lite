@@ -7,6 +7,8 @@ from PhysicsTools.HeppyCore.utils.deltar import deltaR
 from CMGTools.TTHAnalysis.signedSip import *
 from CMGTools.TTHAnalysis.tools.functionsTTH import _ttH_idEmu_cuts_E2_obj,_soft_MuonId_2016ICHEP,_medium_MuonId_2016ICHEP
 from CMGTools.TTHAnalysis.tools.functionsRAX import _susy2lss_idEmu_cuts_obj,_susy2lss_idIsoEmu_cuts_obj
+
+
 #from CMGTools.TTHAnalysis.tools.leptonChoiceRA5 import _susy2lss_idEmu_cuts_obj,_susy2lss_idIsoEmu_cuts_obj
 
 ##------------------------------------------  
@@ -14,6 +16,14 @@ from CMGTools.TTHAnalysis.tools.functionsRAX import _susy2lss_idEmu_cuts_obj,_su
 ##------------------------------------------  
 leptonTypeSusy = NTupleObjectType("leptonSusy", baseObjectTypes = [ leptonTypeExtra ], variables = [
     NTupleVariable("mvaIdSpring15",   lambda lepton : lepton.mvaRun2("NonTrigSpring15MiniAOD") if abs(lepton.pdgId()) == 11 else 1, help="EGamma POG MVA ID for non-triggering electrons, Spring15 re-training; 1 for muons"),
+    NTupleVariable("mvaIdSpring16HZZ",   lambda lepton : lepton.mvaRun2("Spring16HZZ") if abs(lepton.pdgId()) == 11 else 1, help="EGamma POG MVA ID, Spring16; 1 for muons"),
+    NTupleVariable("mvaIdSpring16",   lambda lepton : lepton.mvaRun2("Spring16GP") if abs(lepton.pdgId()) == 11 else 1, help="EGamma POG MVA ID, Spring16; 1 for muons"),
+    NTupleVariable("neutralHadronIsoR03", lambda lepton : lepton.neutralHadronIsoR(0.3), help=""),
+    NTupleVariable("chargedHadronIsoR03", lambda lepton : lepton.chargedHadronIsoR(0.3), help=""),
+    NTupleVariable("EffectiveArea03", lambda lepton : lepton.EffectiveArea03, help=""),
+    NTupleVariable("photonIsoR03", lambda lepton : lepton.photonIsoR(0.3), help=""),
+    NTupleVariable("rho", lambda lepton : lepton.rho, help=""),
+    #NTupleVariable("mvaValueTTH",   lambda lepton : lepton.mvaValueTTH if hasattr(lepton, 'miniAbsIsoCharged') else -999, help="LeptonMVA"),
     #NTupleVariable("mvaIdSpring16",   lambda lepton : lepton.mvaRun2("Spring16") if abs(lepton.pdgId()) == 11 else 1, help="EGamma POG Spring16 MVA discriminator value; 1 for muons"),
     NTupleVariable("eleCutId_Spring2016_25ns_v1_ConvVetoDxyDz",     lambda x : (1*x.electronID("POG_Cuts_ID_SPRING16_25ns_v1_ConvVetoDxyDz_Veto") + 1*x.electronID("POG_Cuts_ID_SPRING16_25ns_v1_ConvVetoDxyDz_Loose") + 1*x.electronID("POG_Cuts_ID_SPRING16_25ns_v1_ConvVetoDxyDz_Medium") + 1*x.electronID("POG_Cuts_ID_SPRING16_25ns_v1_ConvVetoDxyDz_Tight")) if abs(x.pdgId()) == 11 else -1, int, help="Electron cut-based ID Spring2016 25ns v1 ConvVetoDxyDz: 0=none, 1=veto, 2=loose, 3=medium, 4=tight"),
     # Lepton MVA-id related variables
@@ -27,6 +37,7 @@ leptonTypeSusy = NTupleObjectType("leptonSusy", baseObjectTypes = [ leptonTypeEx
     NTupleVariable("jetBTagCMVA", lambda lepton : lepton.jet.btag('pfCombinedMVABJetTags') if hasattr(lepton,'jet') and hasattr(lepton.jet, 'btag') else -99, help="CMA btag of nearest jet"),
     NTupleVariable("jetDR",      lambda lepton : deltaR(lepton.eta(),lepton.phi(),lepton.jet.eta(),lepton.jet.phi()) if hasattr(lepton,'jet') else -1, help="deltaR(lepton, nearest jet)"),
     NTupleVariable("r9",      lambda lepton : lepton.full5x5_r9() if abs(lepton.pdgId()) == 11 else -99, help="SuperCluster 5x5 r9 variable, only for electrons; -99 for muons"),
+    NTupleVariable("full5x5_sigmaIetaIeta", lambda lepton: lepton.full5x5_sigmaIetaIeta() if (abs(lepton.pdgId())==11 and hasattr(lepton,"full5x5_sigmaIetaIeta")) else -999, help="Electron full5x5_sigmaIetaIeta"),
     #2016 muon Id
     NTupleVariable("softMuonId2016", lambda lepton: _soft_MuonId_2016ICHEP(lepton), help="Soft muon ID retuned for ICHEP 2016"),
     NTupleVariable("mediumMuonID2016", lambda lepton: _medium_MuonId_2016ICHEP(lepton), help="Medium muon ID retuned for ICHEP 2016"),
@@ -35,7 +46,10 @@ leptonTypeSusy = NTupleObjectType("leptonSusy", baseObjectTypes = [ leptonTypeEx
     NTupleVariable("muonTrackType",  lambda lepton : 1 if abs(lepton.pdgId()) == 11 else lepton.muonBestTrackType(), int, help="Muon best track type"),
     NTupleVariable("chargeConsistency",  lambda lepton : ( lepton.isGsfCtfScPixChargeConsistent() + lepton.isGsfScPixChargeConsistent() ) if abs(lepton.pdgId()) == 11 else abs(lepton.muonBestTrack().charge() + lepton.innerTrack().charge() + lepton.tunePMuonBestTrack().charge() + ( lepton.globalTrack().charge() + lepton.outerTrack().charge() if lepton.isGlobalMuon() else 0) ), int, help="Tight charge criteria: for electrons, 2 if isGsfCtfScPixChargeConsistent, 1 if only isGsfScPixChargeConsistent, 0 otherwise; for muons, absolute value of the sum of all the charges (5 for global-muons, 3 for global muons)"),
     NTupleVariable("ptErrTk",  lambda lepton : ( lepton.gsfTrack().ptError() ) if abs(lepton.pdgId()) == 11 else (lepton.muonBestTrack().ptError()), help="pt error, for the gsf track or muon best track"),
+    NTupleVariable("matchedTrgObj1El", lambda lepton: (lepton.matchedTrgObj1El.pt() if hasattr(lepton, "matchedTrgObj1El") and lepton.matchedTrgObj1El is not None else float('nan')), help="electron trigger match object pt"),
+    NTupleVariable("matchedTrgObj1Mu", lambda lepton: (lepton.matchedTrgObj1Mu.pt() if hasattr(lepton, "matchedTrgObj1Mu") and lepton.matchedTrgObj1Mu is not None else float('nan')), help="muon trigger match object pt"),
 ])
+
 
 
 leptonTypeSusyExtraLight = NTupleObjectType("leptonSusyExtraLight", baseObjectTypes = [ leptonTypeSusy, leptonTypeExtra ], variables = [
@@ -209,6 +223,17 @@ jetTypeSusyExtra = NTupleObjectType("jetSusyExtra",  baseObjectTypes = [ jetType
     # ---------------
     NTupleVariable("mcEta",   lambda x : x.mcJet.eta() if getattr(x,"mcJet",None) else 0., mcOnly=True, help="eta of associated gen jet"),
     NTupleVariable("mcPhi",   lambda x : x.mcJet.phi() if getattr(x,"mcJet",None) else 0., mcOnly=True, help="phi of associated gen jet"),
+    # --------------- Deep CSV
+    #NTupleVariable("DFudsg", lambda x : x.btag('pfDeepCSVJetTags:probudsg'), float, help="Deep flavor discriminator: udsg"),
+    #NTupleVariable("DFb",    lambda x : x.btag('pfDeepCSVJetTags:probb'),    float, help="Deep flavor discriminator: b"),
+    #NTupleVariable("DFc",    lambda x : x.btag('pfDeepCSVJetTags:probc'),    float, help="Deep flavor discriminator: c"),
+    #NTupleVariable("DFbb",   lambda x : x.btag('pfDeepCSVJetTags:probbb'),   float, help="Deep flavor discriminator: bb"),
+    #NTupleVariable("DFcc",   lambda x : x.btag('pfDeepCSVJetTags:probcc'),   float, help="Deep flavor discriminator: cc"),
+    NTupleVariable("DFudsg", lambda x : x.btag('deepFlavourJetTags:probudsg'), float, help="Deep flavor discriminator: udsg"),
+    NTupleVariable("DFb",    lambda x : x.btag('deepFlavourJetTags:probb'),    float, help="Deep flavor discriminator: b"),
+    NTupleVariable("DFc",    lambda x : x.btag('deepFlavourJetTags:probc'),    float, help="Deep flavor discriminator: c"),
+    NTupleVariable("DFbb",   lambda x : x.btag('deepFlavourJetTags:probbb'),   float, help="Deep flavor discriminator: bb"),
+    NTupleVariable("DFcc",   lambda x : x.btag('deepFlavourJetTags:probcc'),   float, help="Deep flavor discriminator: cc"),
 ])
 
 genParticleWithMotherIndex = NTupleObjectType("genParticleWithMotherIndex", baseObjectTypes = [ genParticleWithMotherId ], mcOnly=True, variables = [

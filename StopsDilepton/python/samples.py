@@ -18,9 +18,12 @@ samples_stopsDilepton = []
 JetHT_260431_M2_5_500 = kreator.makeMyPrivateMCComponent("JetHT_260431_M2_5_500", "/JetHT/schoef-crab_JetHT_Run2015D_M2_5_500_lumiBased_reduced-8e13882dc7c4566a38618e8b59bae173/USER", "PRIVATE", ".*root", "phys03", 1, useAAA=True)
 JetHT_260431          = kreator.makeMyPrivateMCComponent("JetHT_260431", "/JetHT/schoef-crab_JetHT_Run2015D_lumiBased_reduced-4fff70efe810c67b5c65aa7d4a7cd41d/USER", "PRIVATE", ".*root", "phys03", 1, useAAA=True)
 
+JetHT_Run2016H_22Feb2017 = kreator.makeMyPrivateMCComponent("JetHT_Run2016H_22Feb2017", "/JetHT/schoef-mAOD8025-896cb17d190de9797b2a25524d52f407/USER", "PRIVATE", ".*root", "phys03", 1, useAAA=True)
+
 samples_data_private = [
 JetHT_260431_M2_5_500,
 JetHT_260431,
+JetHT_Run2016H_22Feb2017,
 ]
 
 

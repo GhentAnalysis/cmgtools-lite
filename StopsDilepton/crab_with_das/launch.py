@@ -75,6 +75,7 @@ for comp in selectedComponents:
     os.environ["CMG_COMPONENT_NAME"] = comp.name
 #    os.system("python tmp.py > tmp.lis")
     os.system("which crab")
+    #os.system("crab submit --dryrun -c heppy_crab_config_env.py")
     os.system("crab submit -c heppy_crab_config_env.py")
 
 os.system("rm -f python.tar.gz")

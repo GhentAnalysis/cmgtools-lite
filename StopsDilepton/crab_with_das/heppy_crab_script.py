@@ -87,7 +87,7 @@ print "-"*25
 print "printing output txt files"
 os.system('for i in Output/*.txt; do echo $i; cat $i; echo "---------"; done')
 # pack job log files to be sent to output site
-os.system("tar czf output.log.tgz Output/")
+os.system("tar czf output.log.tgz --exclude=cmsswPreProcessing.root Output/")
 
 import ROOT
 f=ROOT.TFile.Open('tree.root')

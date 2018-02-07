@@ -18,6 +18,11 @@ triggers_ee_noniso = ["HLT_DoubleEle33_CaloIdL_v*", "HLT_DoubleEle37_Ele27_CaloI
 triggers_ee_noniso = ["HLT_DoubleEle33_CaloIdL_v*", 
                       "HLT_DoubleEle37_Ele27_CaloIdL_GsfTrkIdVL_v*", 
                       "HLT_DoubleEle33_CaloIdL_GsfTrkIdVL_v" ]
+triggers_ee_ss = [ "HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v*",
+                   "HLT_Ele27_WPTight_Gsf_v*",      
+                   "HLT_Ele25_eta2p1_WPLoose_Gsf_v*", # not in column 0 
+                   "HLT_Ele25_eta2p1_WPTight_Gsf_v*", 
+    ] 
 
 # warning: ee trigger without DZ is prescaled
 triggers_ee_nodz = [ "HLT_Ele17_Ele12_CaloIdL_TrackIdL_IsoVL_v*","HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_v*" ]
@@ -50,12 +55,15 @@ triggers_3mu_alt = [ "HLT_TrkMu15_DoubleTrkMu5NoFiltersNoVtx_v*" ]
 triggers_2mu1e = [ "HLT_DiMu9_Ele9_CaloIdL_TrackIdL_v*" ]
 triggers_2e1mu = [ "HLT_Mu8_DiEle12_CaloIdL_TrackIdL_v*" ]
 
-triggers_1mu_iso = [ 'HLT_IsoMu20_v*', 
-                     'HLT_IsoTkMu20_v*', 
-                     'HLT_IsoMu22_v*', 
-                     'HLT_IsoTkMu22_v*',
+triggers_1mu_iso = [ 'HLT_IsoMu22_v*', 
+                     'HLT_IsoTkMu22_v*', 
+                     'HLT_IsoMu22_eta2p1_v*'
+                     'HLT_IsoTkMu22_eta2p1_v*', 
                      'HLT_IsoMu24_v*', 
                      'HLT_IsoTkMu24_v*']  # Mu20's prescaled in column 0
+
+triggers_1mu_iso_TTZ = ['HLT_IsoMu24_v*','HLT_IsoTkMu24_v*']
+
 triggers_1mu_noniso = [ 'HLT_Mu45_eta2p1_v*', 
                         'HLT_Mu50_v*', 
                         'HLT_TkMu50_v*' ]
@@ -71,6 +79,8 @@ triggers_1e      = [
         "HLT_Ele27_eta2p1_WPLoose_Gsf_v*",
         "HLT_Ele45_WPLoose_Gsf_v*" ]
 triggers_1e_noniso      = [ "HLT_Ele105_CaloIdVT_GsfTrkIdT_v*","HLT_Ele115_CaloIdVT_GsfTrkIdT_v*"]
+
+triggers_1e_iso_TTZ = ["HLT_Ele27_WPTight_Gsf_v*"]
 
 # Lepton fake rate triggers (prescaled)
 triggers_FR_1mu_iso = [ "HLT_Mu%d_TrkIsoVVL_v*" % pt for pt in (8,17) ] # DoubleMu PD

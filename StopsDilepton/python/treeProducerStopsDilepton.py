@@ -27,8 +27,10 @@ susySingleLepton_globalVariables = susyCore_globalVariables + [
             NTupleVariable("met_ElectronEnUp_Pt", lambda ev : ev.met.shiftedPt(ev.met.ElectronEnUp), help="type1, ElectronEnUp, pt"),
             NTupleVariable("met_ElectronEnUp_Phi", lambda ev : ev.met.shiftedPhi(ev.met.ElectronEnUp), help="type1, ElectronEnUp, phi"),
 
-            NTupleVariable("met_chsPt", lambda ev : ev.chsMET.pt(), help="chs met p_{T}"),
-            NTupleVariable("met_chsPhi", lambda ev : ev.chsMET.phi(), help="chs met phi"),
+            NTupleVariable("met_chsPt", lambda ev : ev.chsMET.pt(), help="chs met p_{T} (fromPV definition)"),
+            NTupleVariable("met_chsPhi", lambda ev : ev.chsMET.phi(), help="chs met phi (fromPV definition)"),
+            NTupleVariable("met_chsDzPt", lambda ev : ev.chsMETDz.pt(), help="chs met p_{T} (dZ definition)"),
+            NTupleVariable("met_chsDzPhi", lambda ev : ev.chsMETDz.phi(), help="chs met phi (dZ definition)"),
 
             NTupleVariable("met_JetEnDown_Pt", lambda ev : ev.met.shiftedPt(ev.met.JetEnDown), help="type1, JetEnDown, pt"),
             NTupleVariable("met_JetEnDown_Phi", lambda ev : ev.met.shiftedPhi(ev.met.JetEnDown), help="type1, JetEnDown, phi"),
