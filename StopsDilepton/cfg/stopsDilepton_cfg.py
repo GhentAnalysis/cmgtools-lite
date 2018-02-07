@@ -21,6 +21,8 @@ lepAna.loose_electron_pt  = 5
 eleID = "CBID"
 doElectronScaleCorrections = False
 
+keepLHEWeights =  getHeppyOption("keepLHEweights",True)
+
 if eleID == "CBID":
   lepAna.loose_electron_id  = "POG_Cuts_ID_SPRING16_25ns_v1_ConvVetoDxyDz_Veto" # no Iso
   lepAna.loose_electron_lostHits = 999. # no cut
@@ -188,7 +190,8 @@ if storePackedCandidates:
 from PhysicsTools.Heppy.analyzers.gen.LHEAnalyzer import LHEAnalyzer 
 LHEAna = LHEAnalyzer.defaultConfig
 
-#lheWeightAna.useLumiInfo=True
+#lheWeightAna.useLumiInfo=True # commented out to keep LHE weights in ttH signal (only works that way, no clue why)
+
 
 from CMGTools.RootTools.samples.triggers_13TeV_DATA2016 import *
 triggerFlagsAna.triggerBits = {
@@ -314,12 +317,17 @@ if getHeppyOption("loadSamples"):
     #from CMGTools.StopsDilepton.samples_13TeV_Moriond2017 import *
     from CMGTools.RootTools.samples.samples_13TeV_signals import *
     from CMGTools.StopsDilepton.TTbarDMJets_signals_RunIISummer16MiniAODv2 import *
+    from CMGTools.StopsDilepton.Higgs_signals_RunIISummer16MiniAODv2 import *
     for sample in dataSamples:
         #sample.json="$CMSSW_BASE/src/CMGTools/TTHAnalysis/data/json/Cert_271036-282092_13TeV_PromptReco_Collisions16_JSON.txt"
         sample.json="$CMSSW_BASE/src/CMGTools/TTHAnalysis/data/json/Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.txt"
     from CMGTools.StopsDilepton.samples import *
     
-    selectedComponents = [TTJets_LO]
+    selectedComponents = [ttH_HToInvisible_M125]
+    #selectedComponents = [TBar_tWch_ext]
+    #selectedComponents = [TBar_tch_powheg]
+    #selectedComponents = [TTbarDMJets_DiLept_scalar_NLO_Mchi_10_Mphi_100]
+    #selectedComponents = [TTJets_LO]
     #selectedComponents = [TTbarDMJets_DiLept_pseudoscalar_Mchi_50_Mphi_10]
     #selectedComponents = [SMS_T8bbllnunu_XCha0p5_XSlep0p5_mN1_700_1000]
     #selectedComponents = [SMS_T2bW]    

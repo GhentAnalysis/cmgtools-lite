@@ -108,12 +108,13 @@ VHToNonbb,
 ] + TTHnobb_mWCutfix
 
 #TTHbb       = kreator.makeMCComponent("TTHbb",      "/ttHJetTobb_M125_13TeV_amcatnloFXFX_madspin_pythia8/RunIISpring16MiniAODv2-PUSpring16RAWAODSIM_80X_mcRun2_asymptotic_2016_miniAODv2_v0_ext3-v2/MINIAODSIM", "CMS", ".*root", 0.5085*(0.577))
-#TTHbb_ext1   = kreator.makeMCComponent("TTHbb_ext1",  "/ttHJetTobb_M125_13TeV_amcatnloFXFX_madspin_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_ext1-v1/MINIAODSIM", "CMS", ".*root",  0.5085*(0.577))
-#TTHbb_ext2   = kreator.makeMCComponent("TTHbb_ext2",  "/ttHJetTobb_M125_13TeV_amcatnloFXFX_madspin_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_ext2-v1/MINIAODSIM", "CMS", ".*root",  0.5085*(0.577))
-# NOTAVAILYET # TTHbb_ext3   = kreator.makeMCComponent("TTHbb_ext3",      "/ttHJetTobb_M125_13TeV_amcatnloFXFX_madspin_pythia8/RunIISpring16MiniAODv2-PUSpring16RAWAODSIM_80X_mcRun2_asymptotic_2016_miniAODv2_v0_ext3-v2/MINIAODSIM", "CMS", ".*root", 0.5085*(0.577))
+TTHbb       = kreator.makeMCComponent("TTHbb",       "/ttHJetTobb_M125_13TeV_amcatnloFXFX_madspin_pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext3-v1/MINIAODSIM", "CMS", ".*root", 0.5085*(0.577))
+#TTHbb_ext1   = kreator.makeMCComponent("TTHbb_ext1",   "/ttHJetTobb_M125_13TeV_amcatnloFXFX_madspin_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_ext1-v1/MINIAODSIM", "CMS", ".*root",  0.5085*(0.577))
+#TTHbb_ext2   = kreator.makeMCComponent("TTHbb_ext2",   "/ttHJetTobb_M125_13TeV_amcatnloFXFX_madspin_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_ext2-v1/MINIAODSIM", "CMS", ".*root",  0.5085*(0.577))
+#TTHbb_ext3   = kreator.makeMCComponent("TTHbb_ext3",   "/ttHJetTobb_M125_13TeV_amcatnloFXFX_madspin_pythia8/RunIISpring16MiniAODv2-PUSpring16RAWAODSIM_80X_mcRun2_asymptotic_2016_miniAODv2_v0_ext3-v2/MINIAODSIM", "CMS", ".*root", 0.5085*(0.577))
 
 Higgs += [
-#TTHbb,
+TTHbb,
 #TTHbb_ext1,
 #TTHbb_ext2,
 # NOTAVAILYET # TTHbb_ext3,
@@ -136,8 +137,8 @@ Higgs += [
 
 TToLeptons_sch = kreator.makeMCComponent("TToLeptons_sch", "/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM", "CMS", ".*root", (7.20+4.16)*0.108*3)
 
-T_tch_powheg = kreator.makeMCComponent("T_tch_powheg", "/ST_t-channel_top_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM", "CMS", ".*root", 136.02) # inclusive sample
-TBar_tch_powheg = kreator.makeMCComponent("TBar_tch_powheg", "/ST_t-channel_antitop_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM", "CMS", ".*root", 80.95) # inclusive sample
+T_tch_powheg = kreator.makeMCComponent("T_tch_powheg", "/ST_t-channel_top_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM", "CMS", ".*root", 136.02, useAAA=True) # inclusive sample
+TBar_tch_powheg = kreator.makeMCComponent("TBar_tch_powheg", "/ST_t-channel_antitop_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM", "CMS", ".*root", 80.95, useAAA=True) # inclusive sample
 
 TBar_tWch_noFullyHad_ext = kreator.makeMCComponent("TBar_tWch_noFullyHad_ext", "/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext1-v1/MINIAODSIM", "CMS", ".*root",19.55)
 TBar_tWch_noFullyHad      = kreator.makeMCComponent("TBar_tWch_noFullyHad"     , "/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM", "CMS", ".*root",19.55)
@@ -231,6 +232,27 @@ DY3JetsToLL_M50_LO,
 DY4JetsToLL_M50_LO,
 # NOTAVAILYET # DY1JetsToLL_M10to50,
 # NOTAVAILYET # DY2JetsToLL_M10to50,
+]
+
+ZToMuMu_M50To120    = kreator.makeMCComponent("ZToMuMu_M50To120",   "/ZToMuMu_NNPDF30_13TeV-powheg_M_50_120/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM",  "CMS", ".*root", 1975)
+ZToMuMu_M120To200   = kreator.makeMCComponent("ZToMuMu_M120To200",  "/ZToMuMu_NNPDF30_13TeV-powheg_M_120_200/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM", "CMS", ".*root", 19.32)
+ZToMuMu_M200To400   = kreator.makeMCComponent("ZToMuMu_M200To400",  "/ZToMuMu_NNPDF30_13TeV-powheg_M_200_400/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM", "CMS", ".*root", 2.731)
+ZToMuMu_M400To800   = kreator.makeMCComponent("ZToMuMu_M400To800",  "/ZToMuMu_NNPDF30_13TeV-powheg_M_400_800/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM", "CMS", ".*root", 0.241)
+ZToMuMu_M800To1400  = kreator.makeMCComponent("ZToMuMu_M800To1400", "/ZToMuMu_NNPDF30_13TeV-powheg_M_800_1400/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM","CMS", ".*root", 0.01678)
+ZToMuMu_M1400To2300 = kreator.makeMCComponent("ZToMuMu_M1400To2300","/ZToMuMu_NNPDF30_13TeV-powheg_M_1400_2300/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM","CMS", ".*root", 0.00130)
+ZToMuMu_M2300To3500 = kreator.makeMCComponent("ZToMuMu_M2300To3500","/ZToMuMu_NNPDF30_13TeV-powheg_M_2300_3500/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM","CMS", ".*root", 8.948e-05)
+ZToMuMu_M3500To4500 = kreator.makeMCComponent("ZToMuMu_M3500To4500","/ZToMuMu_NNPDF30_13TeV-powheg_M_3500_4500/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM","CMS", ".*root", 4.135e-06)
+
+
+ZToMuMu = [
+ZToMuMu_M50To120,
+ZToMuMu_M120To200,
+ZToMuMu_M200To400,
+ZToMuMu_M400To800,
+ZToMuMu_M800To1400,
+ZToMuMu_M1400To2300,
+ZToMuMu_M2300To3500,
+ZToMuMu_M3500To4500,
 ]
 
 # W njet bins
@@ -742,7 +764,7 @@ EWKZToNuNu2Jets,
 
 ### ----------------------------- summary ----------------------------------------
 
-mcSamples = TTs + SingleTop + VJets + DYJetsM50HT + DYJetsM5to50HT + DYNJets + WJetsToLNuHT + WNJets + GJetsHT + ZJetsToNuNuHT + QCDHT + QCDPtbcToE + QCDPt + QCDPtEMEnriched + [QCD_Mu15] + QCD_Mu5 +  DiBosons + TriBosons + TTV + Higgs + Rares + EWKV2Jets # + [TChiSlepSnu,T1tttt_2016,T5qqqqVV_2016]
+mcSamples = TTs + SingleTop + VJets + DYJetsM50HT + DYJetsM5to50HT + DYNJets + WJetsToLNuHT + WNJets + GJetsHT + ZJetsToNuNuHT + QCDHT + QCDPtbcToE + QCDPt + QCDPtEMEnriched + [QCD_Mu15] + QCD_Mu5 +  DiBosons + TriBosons + TTV + Higgs + Rares + EWKV2Jets + ZToMuMu # + [TChiSlepSnu,T1tttt_2016,T5qqqqVV_2016]
 
 samples = mcSamples
 

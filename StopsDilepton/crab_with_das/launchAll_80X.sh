@@ -101,16 +101,17 @@
 ##python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TTLep_pow_ext
 #python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TTLep_pow
 #
-
-python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TTJets
+#
+#python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TTJets
 
 ##python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TTHnobb_ext
 #python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TTHnobb_pow
 ##python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TTHnobb_mWCutfix_ch0
 ##python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TTHbb_ext3
+#python launch.py --remoteDir="80X_1l_36" --unitsPerJob=5 --production_label="80X_1l_36" TTHbb
 ##python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TToLeptons_tch_amcatnlo
-##python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TToLeptons_tch_powheg
-##python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TBarToLeptons_tch_powheg
+#python launch.py --remoteDir="80X_1l_36" --unitsPerJob=5 --production_label="80X_1l_36" T_tch_powheg
+#python launch.py --remoteDir="80X_1l_36" --unitsPerJob=5 --production_label="80X_1l_36" TBar_tch_powheg
 #python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" TToLeptons_sch
 ##python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" tWll
 #python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X_1l_31" tWnunu
@@ -369,4 +370,42 @@ python launch.py --remoteDir="80X_1l_31" --unitsPerJob=5 --production_label="80X
 #python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_scalar_Mchi_50_Mphi_300_ext1
 #python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_scalar_Mchi_50_Mphi_50_ext1
 #python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_scalar_Mchi_50_Mphi_95_ext1
+
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_scalar_NLO_Mchi_10_Mphi_100 
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_scalar_NLO_Mchi_10_Mphi_10
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_scalar_NLO_Mchi_10_Mphi_50
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_scalar_NLO_Mchi_1_Mphi_100
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_scalar_NLO_Mchi_1_Mphi_200
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_scalar_NLO_Mchi_1_Mphi_20
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_scalar_NLO_Mchi_1_Mphi_300
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_scalar_NLO_Mchi_1_Mphi_50
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_scalar_NLO_Mchi_50_Mphi_200
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_scalar_NLO_Mchi_50_Mphi_300
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_pseudoscalar_NLO_Mchi_10_Mphi_10
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_pseudoscalar_NLO_Mchi_10_Mphi_50
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_pseudoscalar_NLO_Mchi_1_Mphi_20
+#python launch.py --remoteDir="80X_0l_32" --unitsPerJob=1 --production_label="80X_0l_32" TTbarDMJets_DiLept_pseudoscalar_NLO_Mchi_1_Mphi_50
+
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToMM_HToInvisible_M110
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToMM_HToInvisible_M125
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToMM_HToInvisible_M150
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToMM_HToInvisible_M200
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToMM_HToInvisible_M300
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToMM_HToInvisible_M400
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToMM_HToInvisible_M500
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToMM_HToInvisible_M600
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToMM_HToInvisible_M800
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToMM_HToInvisible_M1000
 #
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToEE_HToInvisible_M110
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToEE_HToInvisible_M125
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToEE_HToInvisible_M150
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToEE_HToInvisible_M200
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToEE_HToInvisible_M300
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToEE_HToInvisible_M400
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToEE_HToInvisible_M500
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToEE_HToInvisible_M600
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToEE_HToInvisible_M800
+#python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ZH_ZToEE_HToInvisible_M1000
+
+python launch.py --remoteDir="80X_1l_32" --unitsPerJob=1 --production_label="80X_1l_32" ttH_HToInvisible_M125
