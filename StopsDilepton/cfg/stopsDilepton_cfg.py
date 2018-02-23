@@ -21,37 +21,18 @@ lepAna.rhoElectron = 'fixedGridRhoFastjetAll'
 
 ## ELECTRONS
 lepAna.loose_electron_pt  = 5
-eleID = "Incl"
 doElectronScaleCorrections = False
 lepAna.doMiniIsolation = True
 
-if eleID == "CBID":
-  lepAna.loose_electron_id  = "POG_Cuts_ID_SPRING16_25ns_v1_ConvVetoDxyDz_Veto" # no Iso
-  lepAna.loose_electron_lostHits = 999. # no cut
-  lepAna.loose_electron_dxy    = 0.1
-  lepAna.loose_electron_dz     = 0.2
+lepAna.loose_electron_id  = ""
+lepAna.loose_electron_lostHits = 999. # no cut
+lepAna.loose_electron_dxy    = 999.
+lepAna.loose_electron_dz     = 999.
 
-  lepAna.inclusive_electron_id  = ""#"POG_Cuts_ID_SPRING15_25ns_v1_ConvVetoDxyDz_Veto_full5x5"
-  lepAna.inclusive_electron_lostHits = 999. # no cut since embedded in ID
-  lepAna.inclusive_electron_dxy    = 999. # no cut since embedded in ID
-  lepAna.inclusive_electron_dz     = 999. # no cut since embedded in ID
-
-elif eleID == "MVAID":
-  inclusive_electron_id  = "" # same as in susyCore
-
-  #lepAna.loose_electron_id = "POG_MVA_ID_Phys14_NonTrig_VLoose" # Phys14 era
-  lepAna.loose_electron_id = "POG_MVA_ID_Spring15_NonTrig_VLoose" # Spring15 25ns era
-
-elif eleID == "Incl": # as inclusive as possible
-  lepAna.loose_electron_id  = ""
-  lepAna.loose_electron_lostHits = 999. # no cut
-  lepAna.loose_electron_dxy    = 999.
-  lepAna.loose_electron_dz     = 999.
-
-  lepAna.inclusive_electron_id  = ""
-  lepAna.inclusive_electron_lostHits = 999.  # no cut
-  lepAna.inclusive_electron_dxy    = 999. # no cut since embedded in ID
-  lepAna.inclusive_electron_dz     = 999. # no cut since embedded in ID
+lepAna.inclusive_electron_id  = ""
+lepAna.inclusive_electron_lostHits = 999.  # no cut
+lepAna.inclusive_electron_dxy    = 999. # no cut since embedded in ID
+lepAna.inclusive_electron_dz     = 999. # no cut since embedded in ID
 
 ## MUONS
 # store everything
@@ -76,7 +57,7 @@ if isolation == "miniIso":
 elif isolation == "relIso03":
   # normal relIso03
   lepAna.ele_isoCorr = "rhoArea"
-  lepAna.mu_isoCorr = "deltaBeta"
+  lepAna.mu_isoCorr = "rhoArea" # this is new!
 
   lepAna.loose_electron_relIso = 0.5
   lepAna.loose_muon_relIso = 0.5
