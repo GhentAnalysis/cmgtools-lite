@@ -29,6 +29,8 @@ lepAna.loose_electron_lostHits = 999. # no cut
 lepAna.loose_electron_dxy    = 999.
 lepAna.loose_electron_dz     = 999.
 
+keepLHEWeights =  getHeppyOption("keepLHEweights",True)
+
 lepAna.inclusive_electron_id  = ""
 lepAna.inclusive_electron_lostHits = 999.  # no cut
 lepAna.inclusive_electron_dxy    = 999. # no cut since embedded in ID
@@ -174,7 +176,8 @@ if storePackedCandidates:
 from PhysicsTools.Heppy.analyzers.gen.LHEAnalyzer import LHEAnalyzer 
 LHEAna = LHEAnalyzer.defaultConfig
 
-#lheWeightAna.useLumiInfo=True
+#lheWeightAna.useLumiInfo=True # commented out to keep LHE weights in ttH signal (only works that way, no clue why)
+
 
 from CMGTools.RootTools.samples.triggers_13TeV_DATA2016 import *
 triggerFlagsAna.triggerBits = {
@@ -369,10 +372,16 @@ if getHeppyOption("loadSamples"):
     from CMGTools.StopsDilepton.ttX0j_5f_MLM_signals_RunIISummer16MiniAODv2 import *
     from CMGTools.StopsDilepton.ewkDM_signals_RunIISummer16MiniAODv2 import *
     from CMGTools.StopsDilepton.samples import *
+    from CMGTools.StopsDilepton.Higgs_signals_RunIISummer16MiniAODv2 import *
     for sample in dataSamples + samples_data_private:
         #sample.json="$CMSSW_BASE/src/CMGTools/TTHAnalysis/data/json/Cert_271036-282092_13TeV_PromptReco_Collisions16_JSON.txt"
         sample.json="$CMSSW_BASE/src/CMGTools/TTHAnalysis/data/json/Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.txt"
     
+    #selectedComponents = [ttH_HToInvisible_M125]
+    #selectedComponents = [TBar_tWch_ext]
+    #selectedComponents = [TBar_tch_powheg]
+    #selectedComponents = [TTbarDMJets_DiLept_scalar_NLO_Mchi_10_Mphi_100]
+    #selectedComponents = [TTJets_LO]
     #selectedComponents = [DYJetsToLL_M50_LO_ext]
     #selectedComponents = [SingleElectron_Run2016H_03Feb2017_v3]
     #selectedComponents = [ttZ0j_ll]
