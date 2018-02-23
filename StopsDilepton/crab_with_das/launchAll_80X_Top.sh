@@ -167,20 +167,29 @@
 #python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016H_03Feb2017_v2
 #python launch.py --remoteDir="80X_1l_v14" --unitsPerJob=1 --production_label="80X_1l_v14" MuonEG_Run2016H_03Feb2017_v3
 
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016B_03Feb2017_v2
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016C_03Feb2017
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016D_03Feb2017
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016E_03Feb2017
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016F_03Feb2017
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016G_03Feb2017
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016H_03Feb2017_v2
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016H_03Feb2017_v3
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016B_03Feb2017_v2
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016C_03Feb2017
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016D_03Feb2017
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016E_03Feb2017
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016F_03Feb2017
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016G_03Feb2017
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016H_03Feb2017_v2
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" HTMHT_Run2016H_03Feb2017_v3
+#
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016B_03Feb2017_v2
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016C_03Feb2017
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016D_03Feb2017
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016E_03Feb2017
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016F_03Feb2017
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016G_03Feb2017
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016H_03Feb2017_v2
+#python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016H_03Feb2017_v3
 
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016B_03Feb2017_v2
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016C_03Feb2017
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016D_03Feb2017
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016E_03Feb2017
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016F_03Feb2017
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016G_03Feb2017
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016H_03Feb2017_v2
-python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" MET_Run2016H_03Feb2017_v3
+python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" JetHT_Run2016B_03Feb2017_v2
+python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" JetHT_Run2016C_03Feb2017
+python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" JetHT_Run2016D_03Feb2017
+python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" JetHT_Run2016E_03Feb2017
+python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" JetHT_Run2016F_03Feb2017
+python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" JetHT_Run2016G_03Feb2017
+python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" JetHT_Run2016H_03Feb2017_v2
+python launch.py --remoteDir="80X_1l_v17" --unitsPerJob=1 --production_label="80X_1l_v17" JetHT_Run2016H_03Feb2017_v3
